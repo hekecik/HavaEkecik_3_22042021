@@ -1,0 +1,778 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Header --------------*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 20px;
+}
+.header img{
+    padding: 15px 0 15px 0;
+}
+
+.place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:	#DCDCDC;
+    padding: 15px 0 15px 0;
+}
+.place p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.place i{
+    padding-right: 20px;
+}
+
+.container-text{
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#F2F2F2;
+}
+.container-text .text-1{
+    font-size: 30px;
+    font-weight: 900;
+}
+.container-text .text-2{
+    font-size: 27px;
+    font-weight: 400;
+}
+.container-text .text-3{
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    background-image:linear-gradient(#e885dd, #a05bdb);
+    box-shadow: 0px 0px 30px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 8px 10px 8px 10px;
+}
+
+.container-fonction{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-fonction .fonction__title{
+    font-size: 25px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+.container-fonction .number{
+    background-color: #9356dc;
+    color: white;
+    margin-right: 35px;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 20px 20px;
+}
+.container-fonction .fonction__text-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    background-color: #F2F2F2;
+    width: 300px;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+.container-fonction .fonction__text-1:hover{
+    background-color: #f5ecff ;
+}
+.container-fonction .fonction__text-1 i{
+    padding-right: 25px;
+    color: #DCDCDC;
+}
+.container-fonction .fonction__text-1 i:hover{
+    color: #9356dc;
+}
+.container-fonction .fonction__text-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    background-color: #F2F2F2;
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+.container-fonction .fonction__text-2:hover{
+    background-color: #f5ecff ;
+}
+.container-fonction .fonction__text-2 i{
+    padding-right: 25px;
+    color: #DCDCDC;
+}
+.container-fonction .fonction__text-2 i:hover{
+    color: #9356dc;
+}
+.container-fonction .fonction__text-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    background-color: #F2F2F2;
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+.container-fonction .fonction__text-3:hover{
+    background-color: #f5ecff ;
+}
+.container-fonction .fonction__text-3 i{
+    padding-right: 25px;
+    color: #DCDCDC;
+}
+.container-fonction .fonction__text-3 i:hover{
+    color: #9356dc;
+}
+/* Partie restaurants ------*/
+
+.container-restaurant{
+    background-color: #F2F2F2;
+    margin-top: 100px;
+}
+.restaurant__title{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.restaurant__cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-p1 img {
+    border: solid white;
+    width: 250px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 256px;
+    height: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
+}
+
+.card-p2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 20px;
+}
+.card-p2 .card-restaurant__text-1{
+    font-weight: 600;
+}
+.card-p2 .card-restaurant__text-2{
+    margin: 0;
+}
+.card-p2 i{
+    padding-left: 45px;
+}
+.card-p2 i:hover{
+    color: linear-gradient(#a05bdb,#e885dd);
+}
+
+/* Footer --------------*/
+
+.page-end{
+    display: flex;
+    flex-direction: row;
+    background:#353535;
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 250px;
+    color: white;
+    margin-top: 70px;
+}
+.page-end img{
+    color: white;
+}
+
+
+
+/* Media queries -------------*/
+
+@media screen and (min-width: 375px) and (max-width: 700px)
+{
+    body{
+        width: 106vh;
+    }
+
+    .logo{
+        width: 300px;
+        height: 100px;
+    }
+
+    .navbar{
+        display: grid;
+        width: 880px;
+        padding-left: 40px;
+    }
+
+    .navbar a{
+       font-size: 5vh;
+    }
+
+    .navbar-hébergements{
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 20px;
+        margin-left: 50px;
+    }
+
+    .navbar-activités{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .navbar-signup{
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 30px
+    }
+
+
+    .navbar a:active {
+        color: #0065FC;
+        border-bottom: solid 4px #0065FC;
+        padding-bottom: 30px;
+        border-top: none;
+    }
+
+
+    .container .container-text p{
+        font-size: 15vw;
+        margin-right: 90px;
+        padding-left: 40px;
+    }
+
+    .container .container-text span{
+        font-size: 10vw;
+    }
+
+    .search{
+        padding-left: 40px;
+    }
+
+
+    .search .btn.i {
+        display: block;
+        font-size: 3em;
+        width: 100px;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .search .fa-map-marker-alt{
+        font-size: 3em;
+        width: 90px;
+    }
+
+    .search .btn {
+        display: none;
+    }
+
+    input{
+        width: 500px;
+        height: 115px;
+        font-size: 10vw;
+        padding-left: 40px;
+        border-right: 0;
+    }
+
+    .filter{
+        display: grid;
+        padding-left: 40px;
+    }
+
+    .filter-title {
+        font-size: 10vw;
+    }
+
+    .filters{
+        display: grid;
+    }
+
+    .economy p{
+        font-size: 10vw;
+        height: 100px;
+        width: 350px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        padding-right: 40px;
+        border-left: none;
+    }
+
+    .economy i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .family{
+        grid-column: 2;
+        font-size: 10vw;
+        margin-left: -100px;
+    }
+
+    .family p{
+        font-size: 10vw;
+        height: 100px;
+        width: 280px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        border-left: none;
+        padding-right: 30px;
+    }
+
+    .family i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 30px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .romance p{
+        font-size: 10vw;
+        height: 100px;
+        width: 350px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        padding-right: 60px;
+        border-left: none;
+    }
+
+    .romance i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .animals{
+        grid-column: 1;
+    }
+
+    .animals p{
+        font-size: 10vw;
+        height: 100px;
+        width: 460px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        border-left: none;
+        padding-right: 30px;
+    }
+
+    .animals i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .info{
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    .info i{
+        font-size: 2rem;
+        border-radius: 50px 50px 50px 50px;
+        border: solid 6px #F2F2F2;
+        width: 80px;
+        height: 60px;
+    }
+
+    .info p{
+        font-size: 10vw;
+    }
+
+
+
+    .populaire{
+        background-color: #F2F2F2;
+        border-radius: 15px 15px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        height: 1250px;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .populaire h2{
+        font-size: 15vw;
+        padding-left: 40px;
+    }
+
+    .populaire h2 i{
+        margin-left: 165px;
+    }
+
+    .card-first{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-left: 60px;
+    }
+
+    .card1{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-left: 60px;
+    }
+
+    .card1-p1 img{
+        width: 260px;
+        height: 285px;
+        border-radius: 40px 0 0 40px;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .card1-text{
+        font-size: 10vw;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+    .card1-text2{
+        font-size: 8vw;
+        padding-left: 20px;
+    }
+
+    .star1 {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .star1 i{
+        font-size: 1.5rem;
+    }
+
+    .star2 {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .star2 i{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    .container2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hebergement{
+        background-color: white;
+        padding-left: 40px;
+    }
+
+    .hebergement h2{
+        font-size: 13vw;
+        margin-bottom: 0;
+    }
+
+    .cards1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .card {
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 390px;
+        margin-top: 30px;
+    }
+
+    .card-p1 img {
+        width: 720px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-right: 3px;
+    }
+
+    .card-text{
+        font-size: 9vw;
+        margin-top: 7px;
+        margin-left: 14px;
+    }
+
+    .card-text1{
+        font-size: 8vw;
+        padding-top: 0;
+        margin-left: 14px;
+    }
+
+    .star {
+        margin-left: 14px;
+        padding-top: 0;
+    }
+
+    .star i{
+        font-size: 1.5rem;
+    }
+
+    .afficher {
+        margin-left: 10px;
+        margin-top: 50px;
+        font-size: 9vw;
+    }
+
+
+
+
+
+    .activités{
+        padding-top: 2100px;
+        width: 940px;
+        padding-left: 60px;
+    }
+
+    .activités h2{
+        font-size: 13vw;
+        margin-bottom: 0;
+    }
+
+    .cards-a{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+
+    .carte-container{
+        margin-left: 0;
+    }
+
+    .carte-a{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .carte-a img {
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .carte-a-text{
+        font-size: 8vw;
+        margin-top: 15px;
+        margin-left: 14px;
+    }
+
+    .pomegues{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .pomegues1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .frioul {
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+    }
+
+    .frioul1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .notre-dame{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+
+    }
+
+    .notre-dame1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .parc{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+    }
+
+    .parc1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+
+    .page-end{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-left: 100px;
+        height: 990px;
+        width: 940px;
+    }
+
+    .page-end .apropos{
+        font-size: 10vw;
+        padding: 0;
+    }
+
+    .page-end .hbg{
+        font-size: 10vw;
+        padding: 0;
+    }
+
+    .page-end .assistance{
+        font-size: 10vw;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 1200px)
+{
+    body{
+        width: 1438px;
+    }
+    .menu-txt{
+        float: right;
+    }
+
+
+    .populaire{
+        width: 400px;
+    }
+
+    .card-first{
+        width: 335px;
+        height: 165px;
+    }
+
+    .card1{
+        width: 335px;
+        height: 165px;
+    }
+
+    .card1-p1 img{
+        width: 170px;
+        height: 160px;
+    }
+
+
+
+    .carte-a{
+        width: 300px;
+        height: 455px;
+    }
+
+    .carte-a img {
+        width: 300px;
+        height: 390px;
+    }
+
+
+    .pomegues{
+        width: 300px;
+        height: 230px;
+    }
+
+    .pomegues1 img{
+        width: 300px;
+        height: 180px;
+    }
+
+
+    .frioul {
+        width: 300px;
+        height: 180px;
+    }
+
+    .frioul1 img{
+        width: 300px;
+        height: 135px;
+    }
+
+
+    .notre-dame{
+        width: 300px;
+        height: 180px;
+    }
+
+    .notre-dame1 img{
+        width: 300px;
+        height: 135px;
+    }
+
+
+    .parc{
+        width: 300px;
+        height: 230px;
+    }
+
+    .parc1 img{
+        width: 300px;
+        height: 180px;
+    }
+
+}
