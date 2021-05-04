@@ -281,6 +281,17 @@ header{
         padding-left: 50px;
         width: 1200px;
     }
+    .container-fonction .fonction__text-1{
+        width: 1000px;
+    }
+    .container-fonction .fonction__text-2{
+        width: 1000px;
+        margin-top: 15px;
+    }
+    .container-fonction .fonction__text-3{
+        width: 1000px;
+        margin-top: 15px;
+    }
     .fonction__title p{
         font-size: 9vh;
     }
