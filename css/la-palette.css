@@ -1,0 +1,302 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header -----------*/
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+.logo img{
+    width: 300px;
+    padding: 15px 0 15px 15px;
+}
+.logo i{
+    padding: 50px 50px 40px 50px;
+    font-size: 4vh;
+    color: #292929;
+}
+main{
+    background-image: url("../images/jay-wennington.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.container__menus{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    background-color: #f2f2f2;
+    height: 500px;
+    border-radius: 40px 40px 0 0;
+}
+.menu__title{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Shrikhand', cursive;
+}
+.menu__title i{
+    padding-top: 27px;
+    padding-left: 30px;
+}
+.menu__starter{
+    padding-left: 40px;
+}
+.menu__starter h3{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #89ddc5;
+    color: #848484;
+}
+.menu__starter-card{
+    background: white;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 20px 20px;
+    width: 300px;
+    padding: 2px 0px 13px 11px;
+    margin-top: 30px;
+}
+.menu__starter-card p{
+    font-weight: 600;
+}
+.menu__starter-card b{
+   float: right;
+   margin-right: 20px;
+}
+
+.menu__dish{
+    padding-left: 40px;
+}
+.menu__dish h3{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #89ddc5;
+    color: #848484;
+}
+.menu__dish-card{
+    background: white;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 20px 20px;
+    width: 350px;
+    padding: 2px 0px 13px 11px;
+    margin-top: 30px;
+}
+.menu__dish-card p{
+    font-weight: 600;
+}
+.menu__dish-card b{
+   float: right;
+   margin-right: 10px;
+}
+
+.menu__dessert{
+    padding-left: 40px;
+}
+.menu__dessert h3{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #89ddc5;
+    color: #848484;
+}
+.menu__dessert-card{
+    background: white;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 20px 20px;
+    width: 300px;
+    padding: 2px 0px 13px 11px;
+    margin-top: 30px;
+}
+.menu__dessert-card p{
+    font-weight: 600;
+}
+.menu__dessert-card b{
+    float: right;
+    margin-right: 20px;
+}
+
+
+.text-3{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.commander{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-image:linear-gradient(#e885dd, #a05bdb);
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 90px 90px 90px 90px;
+    padding: 8px 10px 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin: 0;
+
+}
+
+/* Footer --------------*/
+
+.page-end{
+    display: flex;
+    flex-direction: row;
+    background:#353535;
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 250px;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 700px){
+    body{
+        width: 100vh;
+    }
+
+    main{
+        height: 2200px;
+        width: 100vh;
+    }
+    .logo img{
+        width: 230px;
+        padding-left: 80px;
+    }
+    .logo i{
+        font-size: 6vh;
+    }
+
+    .container__menus{
+        flex-direction: column;
+        height: 1800px;
+        border-radius: 60px 60px 0 0;
+    }
+    .menu__title{
+        font-size: 4vh;
+        padding-top: 25px;
+    }
+    .menu__title i{
+        padding-top: 45px;
+        padding-left: 70px;
+        font-size: 6vh;
+    }
+
+    .menu__starter{
+        padding-left: 0;
+    }
+    .menu__starter h3{
+        font-size: 5vh;
+        margin: 0;
+    }
+    .menu__starter-card{
+        border-radius: 30px 30px;
+        width: 550px;
+        margin-top: 20px;
+    }
+    .menu__starter-card p{
+        font-size: 4vh;
+        margin: 0;
+        padding: 15px 15px;
+    }
+    .menu__starter-card span{
+        font-size: 4vh;
+        padding: 15px 15px;
+    }
+    .menu__starter-card b{
+       font-size: 4vh;
+    }
+
+    .menu__dish{
+        padding-left: 0;
+    }
+    .menu__dish h3{
+        font-size: 5vh;
+    }
+    .menu__dish-card{
+        border-radius: 30px 30px;
+        width: 550px;
+        margin-top: 20px;
+    }
+    .menu__dish-card p{
+        font-size: 4vh;
+        margin: 0;
+        padding: 15px 15px;
+    }
+    .menu__dish-card span{
+        font-size: 22.5px;
+        padding: 15px 15px;
+    }
+    .menu__dish-card b{
+       font-size: 4vh;
+       margin-right: 15px;
+    }
+
+    .menu__dessert{
+        padding-left: 0;
+    }
+    .menu__dessert h3{
+        font-size: 5vh;
+    }
+    .menu__dessert-card{
+        border-radius: 30px 30px;
+        width: 550px;
+        margin-top: 20px;
+    }
+    .menu__dessert-card p{
+        font-size: 4vh;
+        margin: 0;
+        padding: 15px 15px;
+    }
+    .menu__dessert-card span{
+        font-size: 24px;
+        padding: 15px 15px;
+    }
+    .menu__dessert-card b{
+       font-size: 4vh;
+    }
+
+    .text-3{
+        padding-left: 115px;
+        padding-top: 50px;
+    }
+    .commander{
+        font-size: 4vh;
+        box-shadow: 2px 2px 2px grey;
+        border-radius: 90px 90px 90px 90px;
+        padding: 14px 10px 8px 10px;
+        width: 260px;
+        height: 50px;
+        margin: 0;
+    }
+
+    .page-end{
+        display: flex;
+        flex-direction: row;
+        background:#353535;
+        padding-left: 40px;
+        padding-top: 30px;
+        height: 300px;
+        color: white;
+    }
+    .end p{
+        font-size: 4vh;
+    }
+
+
+}
