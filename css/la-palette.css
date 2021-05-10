@@ -255,15 +255,15 @@ main .bg-menu{
         margin: 0;
     }
     .menu__starter-card{
-        border-radius: 10px;
+        border-radius: 15px;
         width: 320px;
         margin-top: 20px;
-        padding: 10px 9px;
+        padding: 13px 10px;
     }
     .menu__starter-card p{
         font-size: 16px;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
     .menu__starter-card span{
         font-size: 14px;
@@ -281,15 +281,15 @@ main .bg-menu{
         margin: 0;
     }
     .menu__dish-card{
-        border-radius: 10px;
+        border-radius: 15px;
         width: 320px;
         margin-top: 20px;
-        padding: 10px 9px;
+        padding: 13px 10px;
     }
     .menu__dish-card p{
         font-size: 16px;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
     .menu__dish-card span{
         font-size: 14px;
@@ -307,15 +307,15 @@ main .bg-menu{
         margin: 0;
     }
     .menu__dessert-card{
-        border-radius: 10px;
+        border-radius: 15px;
         width: 320px;
         margin-top: 20px;
-        padding: 10px 9px;
+        padding: 13px 10px;
     }
     .menu__dessert-card p{
         font-size: 16px;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
     .menu__dessert-card span{
         font-size: 14px;

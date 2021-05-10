@@ -1,75 +1,98 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    padding: 0 0;
-    margin: 0 0;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-html{
+html, body{
+    font-family: 'Raleway', sans-serif;
+    width: auto;
     scroll-behavior: smooth;
 }
 
 /* Header -----------*/
-
-.logo{
+header{
+    justify-content: center;
     display: flex;
+    align-items: center;
     flex-direction: row;
-    background: white;
+    padding: 15px;
+    background-color: #FFF;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    box-shadow: 0px 0px 9px 0px #353535;
 }
-.logo img{
-    width: 300px;
-    padding: 15px 0 15px 15px;
+header img{
+    width: 200px;
 }
-.logo i{
-    padding: 50px 50px 40px 50px;
+
+header i{
+    padding: 40px 50px;
     font-size: 4vh;
     color: #292929;
 }
-main{
-    background-image: url("../images/louis-hansel.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    height: 900px;
-    display: flex;
-    flex-direction: column-reverse;
-
+header i:hover{
+    background-color: #292929;
+    padding: 15px;
+    color: white;
+    border-radius: 30px;
 }
+main img{
+    width: 70%;
+    height: 400px;
+}
+main .bg-menu{
+    display: flex;
+    justify-content: center;
+}
+
 .container__menus{
+    position: relative;
     display: flex;
     flex-direction: row;
     padding-left: 50px;
     background-color: #f2f2f2;
-    height: 500px;
+    height: 400px;
     border-radius: 40px 40px 0 0;
 }
 .menu__title{
     display: flex;
     flex-direction: row;
     font-family: 'Shrikhand', cursive;
+    padding: 10px 0;
 }
 .menu__title i{
-    padding-top: 27px;
-    padding-left: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
+
 .menu__starter{
     padding-left: 40px;
+    padding-top: 20px;
 }
 .menu__starter h3{
-    padding-left: 10px;
     padding-top: 10px;
     font-weight: 400;
-    border-bottom: 1px solid #89ddc5;
     color: #848484;
+}
+.menu__starter .fil{
+    height: 3px;
+    width: 50px;
+    background-color: #99e2d0;
 }
 .menu__starter-card{
     background: white;
-    box-shadow: 1px 1px 1px grey;
-    border-radius: 20px 20px;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    border-radius: 10px;
     width: 300px;
-    padding: 2px 0px 13px 11px;
+    padding: 10px 0px 13px 11px;
     margin-top: 30px;
 }
 .menu__starter-card p{
     font-weight: 600;
+}
+.menu__starter-card span{
+    padding-top: 10px;
 }
 .menu__starter-card b{
    float: right;
@@ -78,77 +101,91 @@ main{
 
 .menu__dish{
     padding-left: 40px;
+    padding-top: 20px;
 }
 .menu__dish h3{
-    padding-left: 10px;
     padding-top: 10px;
     font-weight: 400;
-    border-bottom: 1px solid #89ddc5;
     color: #848484;
+}
+.menu__dish .fil{
+    height: 3px;
+    width: 50px;
+    background-color: #99e2d0;
 }
 .menu__dish-card{
     background: white;
-    box-shadow: 1px 1px 1px grey;
-    border-radius: 20px 20px;
-    width: 350px;
-    padding: 2px 0px 13px 11px;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    border-radius: 10px;
+    width: 380px;
+    padding: 10px 0px 13px 11px;
     margin-top: 30px;
 }
 .menu__dish-card p{
     font-weight: 600;
 }
+.menu__dish-card span{
+    padding-top: 10px;
+}
 .menu__dish-card b{
    float: right;
-   margin-right: 10px;
+   margin-right: 20px;
 }
 
 .menu__dessert{
     padding-left: 40px;
+    padding-top: 20px;
 }
 .menu__dessert h3{
-    padding-left: 10px;
     padding-top: 10px;
     font-weight: 400;
-    border-bottom: 1px solid #89ddc5;
     color: #848484;
+}
+.menu__dessert .fil{
+    height: 3px;
+    width: 50px;
+    background-color: #99e2d0;
 }
 .menu__dessert-card{
     background: white;
-    box-shadow: 1px 1px 1px grey;
-    border-radius: 20px 20px;
-    width: 300px;
-    padding: 2px 0px 13px 11px;
+    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    border-radius: 10px;
+    width: 360px;
+    padding: 10px 0px 13px 11px;
     margin-top: 30px;
 }
 .menu__dessert-card p{
     font-weight: 600;
+}
+.menu__dessert-card span{
+    padding-top: 10px;
 }
 .menu__dessert-card b{
     float: right;
     margin-right: 20px;
 }
 
-
 .text-3{
-    padding-top: 80px;
-    padding-left: 50px;
-}
-
-.commander{
-    font-size: 17px;
-    font-weight: 600;
-    color: white;
-    background-image:linear-gradient(#e885dd, #a05bdb);
-    box-shadow: 1px 1px 1px grey;
-    border-radius: 90px 90px 90px 90px;
-    padding: 8px 10px 8px 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 30px;
-    margin: 0;
-
+    padding: 0 0 40px 0;
+    background-color: #f2f2f2;
+    margin-top: -20px;
+}
+.text-3 input{
+    font-size: 17px;
+    margin-top: 30px;
+    width: 180px;
+    padding: 15px;
+    font-weight: 600;
+    color: white;
+    border: transparent;
+    background-image:linear-gradient(to top, #a05bdb, #e885dd);
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px 0px #353535;
+}
+.text-3 input:hover{
+    opacity: .8;
 }
 
 /* Footer --------------*/
@@ -156,146 +193,280 @@ main{
 .page-end{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background:#353535;
-    padding-left: 40px;
-    padding-top: 30px;
-    height: 250px;
+    padding: 20px 0 40px 0;
+    width: auto;
     color: white;
 }
-
-
+.end img{
+    padding-bottom: 10px;
+}
+.end p{
+    padding-top: 10px;
+}
 
 @media screen and (min-width: 375px) and (max-width: 700px){
     body{
-        width: 100vh;
+        width: auto;
     }
 
     main{
-        height: 2200px;
-        width: 100vh;
+        width: auto;
     }
-    .logo img{
-        width: 230px;
-        padding-left: 80px;
+    header{
+        width: 345px;
+        display: block;
     }
-    .logo i{
-        font-size: 6vh;
+    header i{
+        padding: 0 0 70px 10px;
+    }
+    header img{
+        padding: 10px 0 0 60px;
+        width: 150px;
+    }
+    main img{
+        width: 375px;
     }
 
     .container__menus{
         flex-direction: column;
-        height: 1800px;
+        height: 1100px;
+        width: 355px;
         border-radius: 60px 60px 0 0;
+        padding: 10px 0 0 20px;
     }
     .menu__title{
-        font-size: 4vh;
-        padding-top: 25px;
+        font-size: 20px;
+        padding-top: 10px;
     }
     .menu__title i{
-        padding-top: 45px;
-        padding-left: 60px;
-        font-size: 6vh;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 30px;
     }
 
     .menu__starter{
         padding-left: 0;
     }
     .menu__starter h3{
-        font-size: 5vh;
+        font-size: 20px;
         margin: 0;
     }
     .menu__starter-card{
-        border-radius: 30px 30px;
-        width: 550px;
+        border-radius: 15px;
+        width: 320px;
         margin-top: 20px;
+        padding: 13px 10px;
     }
     .menu__starter-card p{
-        font-size: 4vh;
+        font-size: 16px;
         margin: 0;
-        padding: 15px 15px;
+        padding: 5px 0;
     }
     .menu__starter-card span{
-        font-size: 4vh;
-        padding: 15px 15px;
+        font-size: 14px;
+        padding: 10px 0;
     }
     .menu__starter-card b{
-       font-size: 4vh;
+       font-size: 16px;
     }
 
     .menu__dish{
         padding-left: 0;
     }
     .menu__dish h3{
-        font-size: 5vh;
+        font-size: 20px;
+        margin: 0;
     }
     .menu__dish-card{
-        border-radius: 30px 30px;
-        width: 550px;
+        border-radius: 15px;
+        width: 320px;
         margin-top: 20px;
+        padding: 13px 10px;
     }
     .menu__dish-card p{
-        font-size: 4vh;
+        font-size: 16px;
         margin: 0;
-        padding: 15px 15px;
+        padding: 5px 0;
     }
     .menu__dish-card span{
-        font-size: 25px;
-        padding: 15px 15px;
+        font-size: 14px;
+        padding: 10px 0;
     }
     .menu__dish-card b{
-       font-size: 4vh;
-       margin-right: 15px;
+        font-size: 16px;
     }
 
     .menu__dessert{
         padding-left: 0;
     }
     .menu__dessert h3{
-        font-size: 5vh;
+        font-size: 20px;
+        margin: 0;
     }
     .menu__dessert-card{
-        border-radius: 30px 30px;
-        width: 550px;
+        border-radius: 15px;
+        width: 320px;
         margin-top: 20px;
+        padding: 13px 10px;
     }
     .menu__dessert-card p{
-        font-size: 4vh;
+        font-size: 16px;
         margin: 0;
-        padding: 15px 15px;
+        padding: 5px 0;
     }
     .menu__dessert-card span{
-        font-size: 4vh;
-        padding: 15px 15px;
+        font-size: 14px;
+        padding: 10px 0;
     }
     .menu__dessert-card b{
-       font-size: 4vh;
+        font-size: 16px;
     }
 
     .text-3{
-        padding-left: 115px;
-        padding-top: 50px;
-    }
-    .commander{
-        font-size: 4vh;
-        box-shadow: 2px 2px 2px grey;
-        border-radius: 90px 90px 90px 90px;
-        padding: 14px 10px 8px 10px;
-        width: 260px;
-        height: 50px;
-        margin: 0;
+        padding: 40px 0;
     }
 
     .page-end{
-        display: flex;
-        flex-direction: row;
-        background:#353535;
-        padding-left: 40px;
-        padding-top: 30px;
-        height: 300px;
-        color: white;
+        width: 375px;
+        margin: 0;
+        display: block;
     }
-    .end p{
-        font-size: 4vh;
+    .page-end .end{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .page-end .end img{
+        width: 130px;
+        padding: 20px 0 10px 0;
+    }
+    .end i{
+        padding-right: 6px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    body{
+        width: auto;
+    }
+
+    main{
+        width: auto;
+    }
+    header{
+        width: 738px;
+        position: fixed;
+    }
+    main img{
+        width: 700px;
+    }
+    .container__menus{
+        flex-direction: column;
+        width: auto;
+        height: 1600px;
+        padding: 0 0 0 20px;
+        margin: 0;
+    }
+    .menu__title{
+        font-size: 25px;
+        padding: 20px 35px;
+    }
+    .menu__title i{
+        padding-left: 80px;
+        font-size: 25px;
+    }
+
+    .menu__starter{
+        padding-top: 10px;
+    }
+    .menu__starter h3{
+        font-size: 25px;
+    }
+    .menu__starter-card{
+        width: 600px;
+        height: 100px;
+    }
+    .menu__starter-card p{
+        font-size: 25px;
+        padding: 15px 15px;
+    }
+    .menu__starter-card span{
+        font-size: 22px;
+        padding: 15px 15px;
+    }
+    .menu__starter-card b{
+       font-size: 25px;
+    }
+
+    .menu__dish{
+        padding-top: 10px;
+    }
+    .menu__dish h3{
+        font-size: 25px;
+    }
+    .menu__dish-card{
+        width: 600px;
+        height: 100px;
+    }
+    .menu__dish-card p{
+        font-size: 25px;
+        padding: 15px 15px;
+    }
+    .menu__dish-card span{
+        font-size: 22px;
+        padding: 15px 15px;
+    }
+    .menu__dish-card b{
+        font-size: 25px;
+    }
+
+    .menu__dessert{
+        padding-top: 10px;
+    }
+    .menu__dessert h3{
+        font-size: 25px;
+    }
+    .menu__dessert-card{
+        width: 600px;
+        height: 100px;
+    }
+    .menu__dessert-card p{
+        font-size: 25px;
+        padding: 15px 15px;
+    }
+    .menu__dessert-card span{
+        font-size: 22px;
+        padding: 15px 15px;
+    }
+    .menu__dessert-card b{
+        font-size: 25px;
+    }
+
+    .text-3{
+        padding: 70px 0;
+    }
+    .text-3 input{
+        font-size: 30px;
+        width: 230px;
+    }
+
+    .page-end{
+        width: 768px;
+        display: flex;
+    }
+    .page-end .end{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .page-end .end img{
+        width: 200px;
+        padding: 17px 0 10px 0;
+    }
+    .end i{
+        padding-right: 6px;
     }
 
 

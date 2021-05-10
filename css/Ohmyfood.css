@@ -326,89 +326,100 @@ header img{
 }
 
 
-@media only screen and (min-width: 720px) and (max-width: 1200px)
+@media screen and (min-width: 768px) and (max-width: 1200px)
 {
     body{
-        width: 1438px;
+        width: auto;
     }
-    .menu-txt{
-        float: right;
+    header{
+        width: 768;
     }
-
-
-    .populaire{
-        width: 400px;
-    }
-
-    .card-first{
-        width: 335px;
-        height: 165px;
-    }
-
-    .card1{
-        width: 335px;
-        height: 165px;
-    }
-
-    .card1-p1 img{
-        width: 170px;
-        height: 160px;
-    }
-
-
-
-    .carte-a{
+    header img{
         width: 300px;
-        height: 455px;
+    }
+    .header__container h3, i{
+        font-size: 24px;
+    }
+    .container__text{
+        padding: 30px 0 40px 0;
+    }
+    .container__text h3, h4{
+        font-size: 30px;
+    }
+    .container__text h4{
+        font-size: 22px;
+    }
+    .container__text input{
+        font-size: 22px;
+        margin-top: 35px;
+    }
+    .container__fonction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .fonction__title h2{
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    .container__fonction .fonction__text{
+        margin-top: 30px;
+        width: 430px;
+        height: 90px;
+    }
+    .container__fonction .fonction__text p{
+        font-size: 22px;
+    }
+    .container__fonction .fonction__text i{
+        font-size: 22px;
+    }
+    .container__fonction .number{
+        height: 30px;
+        width: 30px;
+        margin-left: -110px;
+        margin-right: 40px;
+        padding: 5px;
+    }
+    .restaurant__title h2{
+        font-size: 30px;
+    }
+    .restaurant__cards{
+        flex-direction: column;
+    }
+    .card {
+        width: 600px;
+        height: 300px;
+        margin-left: 35px;
+    }
+    .card__image img{
+        width: 600px;
+        height: 210px;
+    }
+    .card__image .new_mark{
+        margin-top: -190px;
+        margin-left: 460px;
+        font-size: 20px;
+        width: 100px;
+        height: 40px;
+    }
+    .card__title a{
+        font-size: 23px;
+    }
+    .card__title p{
+        font-size: 20px;
+    }
+    .card__title i{
+        padding-left: 275px;
+    }
+    .card__title .heart{
+        padding-left: 340px;
     }
 
-    .carte-a img {
-        width: 300px;
-        height: 390px;
+    .end img{
+        width: 250px;
     }
-
-
-    .pomegues{
-        width: 300px;
-        height: 230px;
+    .end {
+        font-size: 20px ;
     }
-
-    .pomegues1 img{
-        width: 300px;
-        height: 180px;
-    }
-
-
-    .frioul {
-        width: 300px;
-        height: 180px;
-    }
-
-    .frioul1 img{
-        width: 300px;
-        height: 135px;
-    }
-
-
-    .notre-dame{
-        width: 300px;
-        height: 180px;
-    }
-
-    .notre-dame1 img{
-        width: 300px;
-        height: 135px;
-    }
-
-
-    .parc{
-        width: 300px;
-        height: 230px;
-    }
-
-    .parc1 img{
-        width: 300px;
-        height: 180px;
-    }
-
 }
