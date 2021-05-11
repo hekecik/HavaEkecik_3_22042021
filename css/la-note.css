@@ -4,7 +4,7 @@
 }
 
 html, body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: auto;
     scroll-behavior: smooth;
 }
@@ -82,7 +82,7 @@ main .bg-menu{
     background-color: #99e2d0;
 }
 .menu__starter-card{
-    background: white;
+    background: #FFF;
     box-shadow: 0px 0px 15px 0px #dcdcdc;
     border-radius: 10px;
     width: 355px;
@@ -181,12 +181,13 @@ main .bg-menu{
     font-weight: 600;
     color: white;
     border: transparent;
-    background-image:linear-gradient(to top, #a05bdb, #e885dd);
+    background-image:linear-gradient(to top, #9356DC, #FF79DA);
     border-radius: 30px;
     box-shadow: 0px 0px 9px 0px #353535;
 }
 .text-3 input:hover{
     opacity: .8;
+    box-shadow: 0px 0px 11px 0px #353535;
 }
 
 /* Footer --------------*/
@@ -199,7 +200,7 @@ main .bg-menu{
     background:#353535;
     padding: 20px 0 40px 0;
     width: auto;
-    color: white;
+    color: #FFF;
 }
 .end img{
     padding-bottom: 10px;
@@ -207,6 +208,11 @@ main .bg-menu{
 .end p{
     padding-top: 10px;
 }
+.end a{
+    text-decoration: none;
+    color: #FFF;
+}
+
 
 @media screen and (min-width: 375px) and (max-width: 700px){
     body{

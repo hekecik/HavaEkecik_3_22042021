@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/Ohmyfood.css" type="text/css">
+    <link rel="stylesheet" href="accueil-style.css" type="text/css">
     <script src="https://kit.fontawesome.com/074639b5cf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet" type="text/css">
     <title> OhMyFood</title>
 </head>
 <body>
+    <div class="loader__container">
+    <div class="loader"></div>
+    </div>
     <header>
             <img alt="logo OhMyFood" src="images/ohmyfood.png">
     </header>
@@ -56,7 +59,7 @@
                 </div>
                 <div class="card__title">
                     <a href="la-palette-du-gout.html">La palette du goût</a>
-                    <i class="far fa-heart"></i>
+                    <i class="far fa-heart" id="coeur"></i>
                     <p> Ménilmontant</p>
                 </div>
             </div>
@@ -104,7 +107,7 @@
             <p><i class="fas fa-hands-helping"></i>
             <strong> Devenir partenaire</strong></p>
             <p> Mentions légales</p>
-            <p> Contact </p>
+            <a href="mailto:ohmyfood@office.com"> Contact </a>
         </div>
     </footer>
 </body>

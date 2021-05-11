@@ -4,7 +4,7 @@
 }
 
 html, body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: auto;
     scroll-behavior: smooth;
 }
@@ -34,7 +34,7 @@ header i{
 header i:hover{
     background-color: #292929;
     padding: 15px;
-    color: white;
+    color: #FFF;
     border-radius: 30px;
 }
 main img{
@@ -180,12 +180,13 @@ main .bg-menu{
     font-weight: 600;
     color: white;
     border: transparent;
-    background-image:linear-gradient(to top, #a05bdb, #e885dd);
+    background-image:linear-gradient(to top,#9356DC, #FF79DA);
     border-radius: 30px;
     box-shadow: 0px 0px 9px 0px #353535;
 }
 .text-3 input:hover{
     opacity: .8;
+    box-shadow: 0px 0px 11px 0px #353535;
 }
 
 /* Footer --------------*/
@@ -198,13 +199,17 @@ main .bg-menu{
     background:#353535;
     padding: 20px 0 40px 0;
     width: auto;
-    color: white;
+    color: #FFF;
 }
 .end img{
     padding-bottom: 10px;
 }
 .end p{
     padding-top: 10px;
+}
+.end a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 @media screen and (min-width: 375px) and (max-width: 700px){
