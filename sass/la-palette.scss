@@ -98,6 +98,24 @@ main .bg-menu{
    float: right;
    margin-right: 20px;
 }
+.menu__animation{
+    transition-duration: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    color: #fff;
+    margin: -1rem -5rem -1rem 1rem;
+    font-size: 20px;
+    height: 59px;
+    width: 50px;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.menu__animation--circle{
+    transition-duration: .5s;
+}
 
 .menu__dish{
     padding-left: 40px;
