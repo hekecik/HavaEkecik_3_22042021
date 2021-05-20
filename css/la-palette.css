@@ -36,6 +36,7 @@ header i {
 header i:hover {
   background-color: #292929;
   padding: 15px;
+  margin: 35px;
   color: #FFF;
   border-radius: 30px;
 }
@@ -52,6 +53,7 @@ main .bg-menu {
 
 .container__menus {
   position: relative;
+  z-index: 1000;
   display: flex;
   flex-direction: row;
   padding-left: 50px;
@@ -96,8 +98,20 @@ main .bg-menu {
   width: 300px;
   padding: 10px 0px 13px 11px;
   margin-top: 30px;
+  overflow: hidden;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
 }
 
+@keyframes fadein {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .menu__starter-card p {
   font-weight: 600;
 }
@@ -111,22 +125,33 @@ main .bg-menu {
   margin-right: 20px;
 }
 
+.menu__starter-card:hover .menu__animation {
+  visibility: visible;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
+}
+
+.menu__starter-card:hover .menu__animation .menu__animation--circle {
+  transform: rotate(-360deg);
+  transition-duration: 1s;
+}
+
 .menu__animation {
-  transition-duration: 0.5s;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   color: #fff;
-  margin: -1rem -5rem -1rem 1rem;
   font-size: 20px;
   height: 59px;
-  width: 50px;
+  width: 80px;
   border-radius: 0px 10px 10px 0px;
-}
-
-.menu__animation--circle {
+  float: right;
+  margin: -2.9rem 0 0 300px;
   transition-duration: 0.5s;
+  transform-origin: right;
+  visibility: hidden;
 }
 
 .menu__dish {
@@ -150,13 +175,28 @@ main .bg-menu {
   background: white;
   box-shadow: 0px 0px 15px 0px #dcdcdc;
   border-radius: 10px;
-  width: 380px;
+  width: 300px;
   padding: 10px 0px 13px 11px;
   margin-top: 30px;
+  overflow: hidden;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
 }
 
+@keyframes fadein {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .menu__dish-card p {
   font-weight: 600;
+  overflow: hidden;
 }
 
 .menu__dish-card span {
@@ -166,6 +206,17 @@ main .bg-menu {
 .menu__dish-card b {
   float: right;
   margin-right: 20px;
+}
+
+.menu__dish-card:hover .menu__animation {
+  visibility: visible;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
+}
+
+.menu__dish-card:hover .menu__animation .menu__animation--circle {
+  transform: rotate(-360deg);
+  transition-duration: 1s;
 }
 
 .menu__dessert {
@@ -189,11 +240,23 @@ main .bg-menu {
   background: white;
   box-shadow: 0px 0px 15px 0px #dcdcdc;
   border-radius: 10px;
-  width: 360px;
+  width: 300px;
   padding: 10px 0px 13px 11px;
   margin-top: 30px;
+  overflow: hidden;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
 }
 
+@keyframes fadein {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .menu__dessert-card p {
   font-weight: 600;
 }
@@ -205,6 +268,17 @@ main .bg-menu {
 .menu__dessert-card b {
   float: right;
   margin-right: 20px;
+}
+
+.menu__dessert-card:hover .menu__animation {
+  visibility: visible;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
+}
+
+.menu__dessert-card:hover .menu__animation .menu__animation--circle {
+  transform: rotate(-360deg);
+  transition-duration: 1s;
 }
 
 .text-3 {

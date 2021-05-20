@@ -10,6 +10,7 @@ html, body{
 }
 
 /* Header -----------*/
+
 header{
     justify-content: center;
     display: flex;
@@ -35,11 +36,11 @@ header i:hover{
     background-color: #292929;
     padding: 15px;
     margin: 35px;
-    color: #FFF;
+    color: white;
     border-radius: 30px;
 }
 main img{
-    width: 70%;
+    width: 60%;
     height: 400px;
 }
 main .bg-menu{
@@ -102,16 +103,6 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__starter-card p{
-    font-weight: 600;
-}
-.menu__starter-card span{
-    padding-top: 10px;
-}
-.menu__starter-card b{
-   float: right;
-   margin-right: 20px;
-}
 .menu__starter-card:hover .menu__animation {
     visibility: visible;
     transition: all .5s ease-in;
@@ -137,6 +128,17 @@ main .bg-menu{
     transition-duration: .5s;
     transform-origin: right;
     visibility: hidden;
+}
+
+.menu__starter-card p{
+    font-weight: 600;
+}
+.menu__starter-card span{
+    padding-top: 10px;
+}
+.menu__starter-card b{
+   float: right;
+   margin-right: 20px;
 }
 
 .menu__dish{
@@ -165,27 +167,14 @@ main .bg-menu{
 }
 @keyframes fadein{
     0% {
-        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         opacity: 0;
     }
 
     100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
         opacity: 1;
     }
-}
-.menu__dish-card p{
-    font-weight: 600;
-    overflow: hidden;
-}
-.menu__dish-card span{
-    padding-top: 10px;
-}
-.menu__dish-card b{
-   float: right;
-   margin-right: 20px;
 }
 .menu__dish-card:hover .menu__animation {
     visibility: visible;
@@ -196,6 +185,18 @@ main .bg-menu{
     transform: rotate(-360deg);
     transition-duration: 1s;
 }
+.menu__dish-card p{
+    font-weight: 600;
+}
+.menu__dish-card span{
+    padding-top: 10px;
+}
+.menu__dish-card b{
+   float: right;
+   margin-right: 20px;
+}
+
+
 
 .menu__dessert{
     padding-left: 40px;
@@ -232,6 +233,15 @@ main .bg-menu{
         opacity: 1;
     }
 }
+.menu__dessert-card:hover .menu__animation {
+    visibility: visible;
+    transition: all .5s ease-in;
+    transform: translateX(-100%);
+}
+.menu__dessert-card:hover .menu__animation .menu__animation--circle {
+    transform: rotate(-360deg);
+    transition-duration: 1s;
+}
 .menu__dessert-card p{
     font-weight: 600;
 }
@@ -242,15 +252,7 @@ main .bg-menu{
     float: right;
     margin-right: 20px;
 }
-.menu__dessert-card:hover .menu__animation {
-    visibility: visible;
-    transition: all .5s ease-in;
-    transform: translateX(-100%);
-}
-.menu__dessert-card:hover .menu__animation .menu__animation--circle {
-    transform: rotate(-360deg);
-    transition-duration: 1s;
-}
+
 
 .text-3{
     display: flex;
@@ -267,7 +269,7 @@ main .bg-menu{
     font-weight: 600;
     color: white;
     border: transparent;
-    background-image:linear-gradient(to top,#9356DC, #FF79DA);
+    background-image:linear-gradient(to top, #9356DC, #FF79DA);
     border-radius: 30px;
     box-shadow: 0px 0px 9px 0px #353535;
 }
@@ -298,6 +300,7 @@ main .bg-menu{
     text-decoration: none;
     color: #FFF;
 }
+
 
 @media screen and (min-width: 375px) and (max-width: 700px){
     body{
@@ -410,7 +413,7 @@ main .bg-menu{
         padding: 5px 0;
     }
     .menu__dessert-card span{
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 0;
     }
     .menu__dessert-card b{
@@ -418,7 +421,7 @@ main .bg-menu{
     }
 
     .text-3{
-        padding: 40px 0;
+        padding: 0 0 30px;
     }
 
     .page-end{
