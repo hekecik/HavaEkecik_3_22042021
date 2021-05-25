@@ -62,10 +62,39 @@ main .bg-menu{
     font-family: 'Shrikhand', cursive;
     padding: 10px 0;
 }
-.menu__title i{
-    padding-top: 10px;
-    padding-left: 20px;
-}
+.menu__like {
+    float: right;
+      .fa-heart {
+        font-size: 25px;
+        transform: scale(1);
+        transition-property: transform;
+        cursor: pointer;
+        transition: 0.5s;
+        color: #DCDCDC;
+        margin: 6px 0 0 20px;
+      }
+  }
+
+  .fa-heart:hover {
+    background: -webkit-linear-gradient(#9356DC,#FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 400ms;
+    animation: animateHeart .4s;
+  }
+
+  @keyframes animateHeart {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
 
 .menu__starter{
     padding-left: 40px;
@@ -102,15 +131,37 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__starter-card p{
+.menu__starter-card .menu__plats{
     font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
 }
-.menu__starter-card span{
-    padding-top: 10px;
+.menu__starter-card .menu__plats2{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 230px;
+    overflow: hidden;
 }
-.menu__starter-card b{
-   float: right;
-   margin-right: 20px;
+.menu__starter-card .menu__price{
+    float: right;
+    margin-right: 20px;
+    font-weight: 600;
+    width: 40px;
+    margin-top: -1.2rem;
+ }
+.menu__starter-card:hover .menu__price{
+    transition: all .5s ease-in;
+    transform: translateX(-140%);
+}
+.menu__starter-card:hover .menu__plats{
+    width: 170px;
+    transition: all .5s ease-in;
+}
+.menu__starter-card:hover .menu__plats2{
+    width: 150px;
+    transition: all .5s ease-in;
 }
 .menu__starter-card:hover .menu__animation {
     visibility: visible;
@@ -176,15 +227,35 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__dish-card p{
+.menu__dish-card .menu__plats{
     font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
+}—
+.menu__dish-card .menu__plats2{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
 }
-.menu__dish-card span{
-    padding-top: 10px;
+.menu__dish .menu__price{
+    float: right;
+    margin-right: 20px;
+    font-weight: 600;
+    width: 40px;
+    margin-top: -1.2rem;
+ }
+.menu__dish-card:hover .menu__price{
+    transition: all .5s ease-in;
+    transform: translateX(-140%);
 }
-.menu__dish-card b{
-   float: right;
-   margin-right: 20px;
+.menu__dish-card:hover .menu__plats{
+    transition: all .5s ease-in;
+}
+.menu__dish-card:hover .menu__plats2{
+    transition: all .5s ease-in;
 }
 .menu__dish-card:hover .menu__animation {
     visibility: visible;
@@ -231,15 +302,37 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__dessert-card p{
+.menu__dessert-card .menu__plats{
     font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
 }
-.menu__dessert-card span{
-    padding-top: 10px;
+.menu__dessert-card .menu__plats2{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 240px;
+    overflow: hidden;
 }
-.menu__dessert-card b{
+.menu__dessert-card .menu__price{
     float: right;
     margin-right: 20px;
+    font-weight: 600;
+    width: 40px;
+    margin-top: -1.2rem;
+}
+.menu__dessert-card:hover .menu__price{
+    transition: all .5s ease-in;
+    transform: translateX(-140%);
+}
+.menu__dessert-card:hover .menu__plats{
+    width: 170px;
+    transition: all .5s ease-in;
+}
+.menu__dessert-card:hover .menu__plats2{
+    width: 170px;
+    transition: all .5s ease-in;
 }
 .menu__dessert-card:hover .menu__animation {
     visibility: visible;
@@ -313,6 +406,10 @@ main .bg-menu{
     header i{
         padding: 0 0 70px 10px;
     }
+    header i:hover{
+        margin: 15px;
+        padding: 8px;
+    }
     header img{
         padding: 10px 0 0 60px;
         width: 150px;
@@ -332,10 +429,9 @@ main .bg-menu{
         font-size: 20px;
         padding-top: 10px;
     }
-    .menu__title i{
-        padding-top: 10px;
-        padding-left: 20px;
-        font-size: 30px;
+    .menu__title .menu__like{
+        padding-top: 4px;
+        padding-left: 5px;
     }
 
     .menu__starter{
@@ -351,19 +447,27 @@ main .bg-menu{
         margin-top: 20px;
         padding: 13px 10px;
     }
-    .menu__starter-card p{
+    .menu__starter-card .menu__plats{
         font-size: 16px;
         margin: 0;
         padding: 5px 0;
+        width: 240px;
     }
-    .menu__starter-card span{
-        font-size: 14px;
-        padding: 10px 0;
+    .menu__starter-card .menu__plats2{
+        font-size: 16px;
     }
-    .menu__starter-card b{
+    .menu__starter-card .menu__price{
        font-size: 16px;
+       margin-top: -1rem;
     }
-
+    .menu__starter-card:hover .menu__price{
+        transform: translateX(-180%);
+    }
+    .menu__starter-card .menu__animation{
+        height: 75px;
+        margin: -3.7rem 0 0 330px;
+        border-radius: 0px 15px 15px 0px;
+    }
     .menu__dish{
         padding-left: 0;
     }
@@ -377,17 +481,26 @@ main .bg-menu{
         margin-top: 20px;
         padding: 13px 10px;
     }
-    .menu__dish-card p{
+    .menu__dish-card .menu__plats{
         font-size: 16px;
         margin: 0;
         padding: 5px 0;
+        width: 240px;
     }
-    .menu__dish-card span{
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    .menu__dish-card b{
+    .menu__dish-card .menu__plats2{
         font-size: 16px;
+    }
+    .menu__dish-card .menu__price{
+       font-size: 16px;
+       margin-top: -1rem;
+    }
+    .menu__dish-card:hover .menu__price{
+        transform: translateX(-180%);
+    }
+    .menu__dish-card .menu__animation{
+        height: 75px;
+        margin: -3.7rem 0 0 330px;
+        border-radius: 0px 15px 15px 0px;
     }
 
     .menu__dessert{
@@ -403,17 +516,26 @@ main .bg-menu{
         margin-top: 20px;
         padding: 13px 10px;
     }
-    .menu__dessert-card p{
+    .menu__dessert-card .menu__plats{
         font-size: 16px;
         margin: 0;
         padding: 5px 0;
+        width: 240px;
     }
-    .menu__dessert-card span{
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    .menu__dessert-card b{
+    .menu__dessert-card .menu__plats2{
         font-size: 16px;
+    }
+    .menu__dessert-card .menu__price{
+       font-size: 16px;
+       margin-top: -1rem;
+    }
+    .menu__dessert-card:hover .menu__price{
+        transform: translateX(-180%);
+    }
+    .menu__dessert-card .menu__animation{
+        height: 75px;
+        margin: -3.7rem 0 0 330px;
+        border-radius: 0px 15px 15px 0px;
     }
 
     .text-3{
@@ -457,7 +579,7 @@ main .bg-menu{
     .container__menus{
         flex-direction: column;
         width: auto;
-        height: 1600px;
+        height: 1300px;
         padding: 0 0 0 20px;
         margin: 0;
     }
@@ -465,9 +587,11 @@ main .bg-menu{
         font-size: 25px;
         padding: 20px 35px;
     }
-    .menu__title i{
-        padding-left: 80px;
-        font-size: 25px;
+
+    .menu__like .fa-heart{
+        padding-left: 50px;
+        padding-top: 7px;
+        font-size: 30px;
     }
 
     .menu__starter{
@@ -478,18 +602,33 @@ main .bg-menu{
     }
     .menu__starter-card{
         width: 600px;
-        height: 100px;
     }
-    .menu__starter-card p{
+    .menu__starter-card .menu__plats{
         font-size: 25px;
-        padding: 15px 15px;
+        width: 500px;
     }
-    .menu__starter-card span{
-        font-size: 22px;
-        padding: 15px 15px;
+    .menu__starter-card:hover .menu__plats{
+        width: 500px;
     }
-    .menu__starter-card b{
-       font-size: 25px;
+    .menu__starter-card:hover .menu__plats2{
+        width: 500px;
+    }
+    .menu__starter-card .menu__plats2{
+        font-size: 25px;
+        width: 500px;
+    }
+    .menu__starter-card .menu__price{
+       font-size: 20px;
+    }
+    .menu__starter-card:hover .menu__price{
+        transform: translateX(-200%);
+    }
+    .menu__starter-card .menu__animation{
+        width: 100px;
+    }
+    .menu__starter-card .menu__animation{
+        height: 100px;
+        margin: -4.9rem 0 0 605px;
     }
 
     .menu__dish{
@@ -500,18 +639,33 @@ main .bg-menu{
     }
     .menu__dish-card{
         width: 600px;
+    }
+    .menu__dish-card .menu__plats{
+        font-size: 25px;
+        width: 500px;
+    }
+    .menu__dish-card:hover .menu__plats{
+        width: 500px;
+    }
+    .menu__dish-card:hover .menu__plats2{
+        width: 500px;
+    }
+    .menu__dish-card .menu__plats2{
+        font-size: 25px;
+        width: 500px;
+    }
+    .menu__dish-card .menu__price{
+       font-size: 20px;
+    }
+    .menu__dish-card:hover .menu__price{
+        transform: translateX(-200%);
+    }
+    .menu__dish-card .menu__animation{
+        width: 100px;
+    }
+    .menu__dish-card .menu__animation{
         height: 100px;
-    }
-    .menu__dish-card p{
-        font-size: 25px;
-        padding: 15px 15px;
-    }
-    .menu__dish-card span{
-        font-size: 22px;
-        padding: 15px 15px;
-    }
-    .menu__dish-card b{
-        font-size: 25px;
+        margin: -4.9rem 0 0 605px;
     }
 
     .menu__dessert{
@@ -522,20 +676,34 @@ main .bg-menu{
     }
     .menu__dessert-card{
         width: 600px;
+    }
+    .menu__dessert-card .menu__plats{
+        font-size: 25px;
+        width: 500px;
+    }
+    .menu__dessert-card:hover .menu__plats{
+        width: 500px;
+    }
+    .menu__dessert-card:hover .menu__plats2{
+        width: 500px;
+    }
+    .menu__dessert-card .menu__plats2{
+        font-size: 25px;
+        width: 500px;
+    }
+    .menu__dessert-card .menu__price{
+       font-size: 20px;
+    }
+    .menu__dessert-card:hover .menu__price{
+        transform: translateX(-200%);
+    }
+    .menu__dessert-card .menu__animation{
+        width: 100px;
+    }
+    .menu__dessert-card .menu__animation{
         height: 100px;
+        margin: -4.9rem 0 0 605px;
     }
-    .menu__dessert-card p{
-        font-size: 25px;
-        padding: 15px 15px;
-    }
-    .menu__dessert-card span{
-        font-size: 22px;
-        padding: 15px 15px;
-    }
-    .menu__dessert-card b{
-        font-size: 25px;
-    }
-
     .text-3{
         padding: 70px 0;
     }

@@ -20,7 +20,7 @@ html, body {
   top: 0;
   left: 0;
   position: fixed;
-  animation-delay: 1.1s;
+  animation-delay: 1.8s;
   animation-fill-mode: both;
   background-color: #353535;
 }
@@ -282,28 +282,37 @@ header img {
 }
 
 .menu__like {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
   float: right;
   margin-right: 40px;
-  transform-origin: bottom;
+}
+.menu__like .fa-heart {
+  font-size: 25px;
+  transform: scale(1);
+  transition-property: transform;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #DCDCDC;
 }
 
-.menu__like::before, .fa-heart {
-  position: absolute;
-}
-
-.like__2:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+.fa-heart:hover {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 0px solid transparent;
+  transition-duration: 400ms;
+  animation: animateHeart 0.4s;
 }
 
-.like__1:hover {
-  background: transparent;
+@keyframes animateHeart {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
 /* Footer --------------*/
 .page-end {
   display: flex;
@@ -432,14 +441,6 @@ header img {
     margin-left: 220px;
   }
 
-  .card__title i {
-    padding-left: 120px;
-  }
-
-  .card__title .heart {
-    padding-left: 157px;
-  }
-
   .page-end {
     width: 375px;
     margin: 0;
@@ -466,7 +467,7 @@ header img {
   }
 
   header {
-    width: 768;
+    width: 768px;
   }
 
   header img {
@@ -563,12 +564,8 @@ header img {
     font-size: 20px;
   }
 
-  .card__title i {
-    padding-left: 275px;
-  }
-
-  .card__title .heart {
-    padding-left: 340px;
+  .menu__like .fa-heart {
+    font-size: 35px;
   }
 
   .end img {
