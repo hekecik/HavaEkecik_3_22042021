@@ -52,7 +52,7 @@ html, body {
   height: 200px;
   position: absolute;
   left: 0;
-  top: -10;
+  top: -10px;
   box-sizing: border-box;
   border-radius: 50%;
 }
