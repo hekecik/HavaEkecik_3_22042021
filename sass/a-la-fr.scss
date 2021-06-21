@@ -8,60 +8,70 @@ html, body{
     width: auto;
     scroll-behavior: smooth;
 }
+$Blanc: #fff;
+$Shadow: #353535;
+$Icon: #292929;
+$Bg: #f2f2f2;
+$Gris: #DCDCDC;
+$Violet: #9356DC;
+$Rose: #FF79DA;
+$Vert: #99e2d0;
+$GreyF: #848484;
 
 /* Header -----------*/
 
-header{
+header {
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: row;
     padding: 15px;
-    background-color: #FFF;
+    background-color: $Blanc;
     width: 100%;
     height: 50px;
     position: fixed;
-    box-shadow: 0px 0px 9px 0px #353535;
+    box-shadow: 0px 0px 9px 0px $Shadow;
+        img {
+        width: 200px;
+    }
+        i {
+        padding: 40px 50px;
+        font-size: 4vh;
+        color: $Icon;
+    }
+        & i:hover{
+        background-color: $Icon;
+        padding: 15px;
+        margin: 35px;
+        color: $Blanc;
+        border-radius: 30px;
+    }
 }
-header img{
-    width: 200px;
+main {
+    img{
+        width: 70%;
+        height: 400px;
+    }
+    .bg-menu{
+        display: flex;
+        justify-content: center;
+    }
 }
 
-header i{
-    padding: 40px 50px;
-    font-size: 4vh;
-    color: #292929;
-}
-header i:hover{
-    background-color: #292929;
-    padding: 15px;
-    margin: 35px;
-    color: white;
-    border-radius: 30px;
-}
-main img{
-    width: 60%;
-    height: 400px;
-}
-main .bg-menu{
-    display: flex;
-    justify-content: center;
-}
-
-.container__menus{
+.container__menus {
     position: relative;
     display: flex;
     flex-direction: row;
     padding-left: 50px;
-    background-color: #f2f2f2;
+    background-color: $Bg;
     height: 400px;
     border-radius: 40px 40px 0 0;
-}
-.menu__title{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Shrikhand', cursive;
-    padding: 10px 0;
+    .menu__title{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Shrikhand', cursive;
+        padding: 10px 0;
+    }
 }
 
 .menu__like {
@@ -72,18 +82,17 @@ main .bg-menu{
         transition-property: transform;
         cursor: pointer;
         transition: 0.5s;
-        color: #DCDCDC;
+        color: $Gris;
         margin: 6px 0 0 20px;
+        &:hover {
+            background: -webkit-linear-gradient($Violet,$Rose);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition-duration: 400ms;
+            animation: animateHeart .4s;
+          }
       }
-  }
-
-  .fa-heart:hover {
-    background: -webkit-linear-gradient(#9356DC,#FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition-duration: 400ms;
-    animation: animateHeart .4s;
-  }
+}
 
   @keyframes animateHeart {
     0% {
@@ -98,30 +107,33 @@ main .bg-menu{
   }
 
 
-.menu__starter{
+  .menu__starter{
     padding-left: 40px;
     padding-top: 20px;
-}
-.menu__starter h3{
-    padding-top: 10px;
-    font-weight: 400;
-    color: #848484;
-}
-.menu__starter .fil{
-    height: 3px;
-    width: 50px;
-    background-color: #99e2d0;
+    animation-delay: 0.66667s;
+    h3{
+        padding-top: 10px;
+        font-weight: 400;
+        color: $GreyF;
+    }
+    .fil{
+        height: 3px;
+        width: 50px;
+        background-color: $Vert;
+    }
 }
 .menu__starter-card{
-    background: white;
-    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    background: $Blanc;
+    box-shadow: 0px 0px 15px 0px $Gris;
     border-radius: 10px;
     width: 300px;
     padding: 10px 0px 13px 11px;
     margin-top: 30px;
-    overflow: hidden;
     animation: fadein 1.2s .3s ease-out both,transform .3s;
+    overflow: hidden;
+    cursor: pointer;
 }
+
 @keyframes fadein{
     0% {
         transform: translateY(-50%);
@@ -134,26 +146,28 @@ main .bg-menu{
     }
 }
 
-.menu__starter-card .menu__plats{
-    font-weight: 600;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 200px;
-    overflow: hidden;
+.menu__starter-card {
+    .menu__plats{
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 200px;
+        overflow: hidden;
+    }
+    .menu__plats2{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 240px;
+        overflow: hidden;
+    }
+    .menu__price{
+        float: right;
+        margin-right: 20px;
+        font-weight: 600;
+        width: 40px;
+        margin-top: -1.2rem;
+     }
 }
-.menu__starter-card .menu__plats2{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 240px;
-    overflow: hidden;
-}
-.menu__starter-card .menu__price{
-    float: right;
-    margin-right: 20px;
-    font-weight: 600;
-    width: 40px;
-    margin-top: -1.2rem;
- }
 .menu__starter-card:hover .menu__price{
     transition: all .5s ease-in;
     transform: translateX(-140%);
@@ -180,8 +194,8 @@ main .bg-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #99e2d0;
-    color: #fff;
+    background-color: $Vert;
+    color: $Blanc;
     font-size: 20px;
     height: 59px;
     width: 80px;
@@ -195,20 +209,20 @@ main .bg-menu{
 .menu__dish{
     padding-left: 40px;
     padding-top: 20px;
-}
-.menu__dish h3{
-    padding-top: 10px;
-    font-weight: 400;
-    color: #848484;
-}
-.menu__dish .fil{
-    height: 3px;
-    width: 50px;
-    background-color: #99e2d0;
+    h3{
+        padding-top: 10px;
+        font-weight: 400;
+        color: $GreyF;
+    }
+    .fil{
+        height: 3px;
+        width: 50px;
+        background-color: $Vert;
+    }
 }
 .menu__dish-card{
     background: white;
-    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    box-shadow: 0px 0px 15px 0px $Gris;
     border-radius: 10px;
     width: 300px;
     padding: 10px 0px 13px 11px;
@@ -227,26 +241,28 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__dish-card .menu__plats{
-    font-weight: 600;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 200px;
-    overflow: hidden;
+.menu__dish-card {
+    .menu__plats{
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 200px;
+        overflow: hidden;
+    }
+    .menu__plats2{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 240px;
+        overflow: hidden;
+    }
+    .menu__price{
+        float: right;
+        margin-right: 20px;
+        font-weight: 600;
+        width: 40px;
+        margin-top: -1.2rem;
+     }
 }
-.menu__dish-card .menu__plats2{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 240px;
-    overflow: hidden;
-}
-.menu__dish .menu__price{
-    float: right;
-    margin-right: 20px;
-    font-weight: 600;
-    width: 40px;
-    margin-top: -1.2rem;
- }
 .menu__dish-card:hover .menu__price{
     transition: all .5s ease-in;
     transform: translateX(-140%);
@@ -270,20 +286,20 @@ main .bg-menu{
 .menu__dessert{
     padding-left: 40px;
     padding-top: 20px;
-}
-.menu__dessert h3{
-    padding-top: 10px;
-    font-weight: 400;
-    color: #848484;
-}
-.menu__dessert .fil{
-    height: 3px;
-    width: 50px;
-    background-color: #99e2d0;
+    h3{
+        padding-top: 10px;
+        font-weight: 400;
+        color: $GreyF;
+    }
+    .fil{
+        height: 3px;
+        width: 50px;
+        background-color: $Vert;
+    }
 }
 .menu__dessert-card{
-    background: white;
-    box-shadow: 0px 0px 15px 0px #dcdcdc;
+    background: $Blanc;
+    box-shadow: 0px 0px 15px 0px $Gris;
     border-radius: 10px;
     width: 300px;
     padding: 10px 0px 13px 11px;
@@ -302,26 +318,28 @@ main .bg-menu{
         opacity: 1;
     }
 }
-.menu__dessert-card .menu__plats{
-    font-weight: 600;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 200px;
-    overflow: hidden;
+.menu__dessert-card {
+    .menu__plats{
+        font-weight: 600;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 200px;
+        overflow: hidden;
+    }
+    .menu__plats2{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 240px;
+        overflow: hidden;
+    }
+    .menu__price{
+        float: right;
+        margin-right: 20px;
+        font-weight: 600;
+        width: 40px;
+        margin-top: -1.2rem;
+     }
 }
-.menu__dessert-card .menu__plats2{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 240px;
-    overflow: hidden;
-}
-.menu__dessert-card .menu__price{
-    float: right;
-    margin-right: 20px;
-    font-weight: 600;
-    width: 40px;
-    margin-top: -1.2rem;
- }
 .menu__dessert-card:hover .menu__price{
     transition: all .5s ease-in;
     transform: translateX(-140%);
@@ -349,24 +367,24 @@ main .bg-menu{
     display: flex;
     justify-content: center;
     padding: 0 0 40px 0;
-    background-color: #f2f2f2;
+    background-color: $Bg;
     margin-top: -20px;
-}
-.text-3 input{
-    font-size: 17px;
-    margin-top: 30px;
-    width: 180px;
-    padding: 15px;
-    font-weight: 600;
-    color: white;
-    border: transparent;
-    background-image:linear-gradient(to top, #9356DC, #FF79DA);
-    border-radius: 30px;
-    box-shadow: 0px 0px 9px 0px #353535;
-}
-.text-3 input:hover{
-    opacity: .8;
-    box-shadow: 0px 0px 11px 0px #353535;
+    input{
+        font-size: 17px;
+        margin-top: 30px;
+        width: 180px;
+        padding: 15px;
+        font-weight: 600;
+        color: white;
+        border: transparent;
+        background-image:linear-gradient(to top,$Violet, $Rose);
+        border-radius: 30px;
+        box-shadow: 0px 0px 9px 0px $Shadow;
+        &:hover{
+            opacity: .8;
+            box-shadow: 0px 0px 11px 0px $Shadow;
+        }
+    }
 }
 
 /* Footer --------------*/
@@ -376,20 +394,23 @@ main .bg-menu{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background:#353535;
+    background:$Shadow;
     padding: 20px 0 40px 0;
     width: auto;
-    color: #FFF;
-}
-.end img{
-    padding-bottom: 10px;
-}
-.end p{
-    padding-top: 10px;
-}
-.end a{
-    text-decoration: none;
-    color: #FFF;
+    color: $Blanc;
+    .end{
+        img{
+            padding-bottom: 10px;
+        }
+        p{
+            padding-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:$Blanc;
+        }
+
+    }
 }
 
 
@@ -398,23 +419,28 @@ main .bg-menu{
         width: auto;
     }
 
-    main{
+    main {
         width: auto;
+        img{
+            width: 375px;
+        }
     }
-    header{
+    header {
         width: 345px;
         display: block;
+        i {
+            padding: 0 0 70px 10px;
+                &:hover{
+                    margin: 15px;
+                    padding: 8px;
+                }
+        }
+        img{
+            padding: 10px 0 0 60px;
+            width: 150px;
+        }
     }
-    header i{
-        padding: 0 0 70px 10px;
-    }
-    header img{
-        padding: 10px 0 0 60px;
-        width: 150px;
-    }
-    main img{
-        width: 375px;
-    }
+
 
     .container__menus{
         flex-direction: column;
@@ -422,41 +448,42 @@ main .bg-menu{
         width: 355px;
         border-radius: 60px 60px 0 0;
         padding: 10px 0 0 20px;
-    }
-    .menu__title{
-        font-size: 20px;
-        padding-top: 10px;
-    }
-    .menu__title .menu__like{
-        padding-top: 5px;
-        padding-left: 8px;
+        margin-top: -3.5rem;
+        .menu__title{
+            font-size: 20px;
+            padding-top: 10px;
+            .menu__like{
+                padding-top: 5px;
+                padding-left: 8px;
+            }
+        }
     }
 
-    .menu__starter{
+    .menu__starter {
         padding-left: 0;
-    }
-    .menu__starter h3{
-        font-size: 20px;
-        margin: 0;
+        h3{
+            font-size: 20px;
+            margin: 0;
+        }
     }
     .menu__starter-card{
         border-radius: 15px;
         width: 320px;
         margin-top: 20px;
         padding: 13px 10px;
-    }
-    .menu__starter-card .menu__plats{
-        font-size: 16px;
-        margin: 0;
-        padding: 5px 0;
-        width: 240px;
-    }
-    .menu__starter-card .menu__plats2{
-        font-size: 16px;
-    }
-    .menu__starter-card .menu__price{
-       font-size: 16px;
-       margin-top: -1rem;
+        .menu__plats{
+            font-size: 16px;
+            margin: 0;
+            padding: 5px 0;
+            width: 240px;
+        }
+        .menu__plats2{
+            font-size: 16px;
+        }
+        .menu__price{
+            font-size: 16px;
+            margin-top: -1rem;
+         }
     }
     .menu__starter-card:hover .menu__price{
         transform: translateX(-180%);
@@ -468,29 +495,29 @@ main .bg-menu{
     }
     .menu__dish{
         padding-left: 0;
-    }
-    .menu__dish h3{
-        font-size: 20px;
-        margin: 0;
+        h3{
+            font-size: 20px;
+            margin: 0;
+        }
     }
     .menu__dish-card{
         border-radius: 15px;
         width: 320px;
         margin-top: 20px;
         padding: 13px 10px;
-    }
-    .menu__dish-card .menu__plats{
-        font-size: 16px;
-        margin: 0;
-        padding: 5px 0;
-        width: 240px;
-    }
-    .menu__dish-card .menu__plats2{
-        font-size: 16px;
-    }
-    .menu__dish-card .menu__price{
-       font-size: 16px;
-       margin-top: -1rem;
+        .menu__plats{
+            font-size: 16px;
+            margin: 0;
+            padding: 5px 0;
+            width: 240px;
+        }
+        .menu__plats2{
+            font-size: 16px;
+        }
+        .menu__price{
+            font-size: 16px;
+            margin-top: -1rem;
+         }
     }
     .menu__dish-card:hover .menu__price{
         transform: translateX(-180%);
@@ -503,29 +530,29 @@ main .bg-menu{
 
     .menu__dessert{
         padding-left: 0;
-    }
-    .menu__dessert h3{
-        font-size: 20px;
-        margin: 0;
+        h3{
+            font-size: 20px;
+            margin: 0;
+        }
     }
     .menu__dessert-card{
         border-radius: 15px;
         width: 320px;
         margin-top: 20px;
         padding: 13px 10px;
-    }
-    .menu__dessert-card .menu__plats{
-        font-size: 16px;
-        margin: 0;
-        padding: 5px 0;
-        width: 240px;
-    }
-    .menu__dessert-card .menu__plats2{
-        font-size: 16px;
-    }
-    .menu__dessert-card .menu__price{
-       font-size: 16px;
-       margin-top: -1rem;
+        .menu__plats{
+            font-size: 16px;
+            margin: 0;
+            padding: 5px 0;
+            width: 240px;
+        }
+        .menu__plats2{
+            font-size: 16px;
+        }
+        .menu__price{
+            font-size: 16px;
+            margin-top: -1rem;
+         }
     }
     .menu__dessert-card:hover .menu__price{
         transform: translateX(-180%);
@@ -544,17 +571,17 @@ main .bg-menu{
         width: 375px;
         margin: 0;
         display: block;
-    }
-    .page-end .end{
-        font-size: 15px;
-        padding-left: 20px;
-    }
-    .page-end .end img{
-        width: 130px;
-        padding: 20px 0 10px 0;
-    }
-    .end i{
-        padding-right: 6px;
+        .end{
+            font-size: 15px;
+            padding-left: 20px;
+            img{
+                width: 130px;
+                padding: 20px 0 10px 0;
+            }
+            i{
+                padding-right: 6px;
+            }
+        }
     }
 
 }
@@ -572,7 +599,7 @@ main .bg-menu{
         position: fixed;
     }
     main img{
-        width: 700px;
+        width: 770px;
     }
     .container__menus{
         flex-direction: column;
