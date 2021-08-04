@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 html, body{
@@ -26,33 +26,33 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 15px;
+    padding: 0.9375rem;
     background-color: $Blanc;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     position: fixed;
-    box-shadow: 0px 0px 9px 0px $Shadow;
+    box-shadow: 0rem 0rem 0.5625rem 0rem $Shadow;
         img {
-        width: 200px;
+        width: 12.5rem;
     }
         i {
-        padding: 40px 50px;
+        padding: 2.5rem 3.125rem;
         font-size: 4vh;
         color: $Icon;
     }
         & i:hover{
         background-color: $Icon;
-        padding: 15px;
-        margin: 35px;
+        padding: 0.9375rem;
+        margin: 2.1875rem;
         color: $Blanc;
-        border-radius: 30px;
+        border-radius: 1.875rem;
     }
 }
 
 main {
     img{
         width: 70%;
-        height: 400px;
+        height: 25rem;
     }
     .bg-menu{
         display: flex;
@@ -64,28 +64,28 @@ main {
     position: relative;
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
+    padding-left: 3.125rem;
     background-color: $Bg;
-    height: 400px;
-    border-radius: 40px 40px 0 0;
+    height: 25rem;
+    border-radius: 2.5rem 2.5rem 0 0;
     .menu__title{
         display: flex;
         flex-direction: row;
         font-family: 'Shrikhand', cursive;
-        padding: 10px 0;
+        padding: .625rem 0;
     }
 }
 
 .menu__like {
     float: right;
       .fa-heart {
-        font-size: 25px;
+        font-size: 1.5625rem;
         transform: scale(1);
         transition-property: transform;
         cursor: pointer;
         transition: 0.5s;
         color: $Gris;
-        margin: 6px 0 0 20px;
+        margin: .375rem 0 0 1.25rem;
         &:hover {
             background: -webkit-linear-gradient($Violet,$Rose);
             -webkit-background-clip: text;
@@ -110,28 +110,28 @@ main {
 
 
 .menu__starter{
-    padding-left: 40px;
-    padding-top: 20px;
+    padding-left: 2.5rem;
+    padding-top: 1.25rem;
     animation-delay: 0.66667s;
     h3{
-        padding-top: 10px;
+        padding-top: .625rem;
         font-weight: 400;
         color: $GreyF;
     }
     .fil{
-        height: 3px;
-        width: 50px;
+        height: .1875rem;
+        width: 3.125rem;
         background-color: $Vert;
     }
 }
 
 .menu__starter-card{
     background: $Blanc;
-    box-shadow: 0px 0px 15px 0px $Gris;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px 0px 13px 11px;
-    margin-top: 30px;
+    box-shadow: 0rem 0rem .9375rem 0rem $Gris;
+    border-radius: .625rem;
+    width: 18.75rem;
+    padding: .625rem 0rem .8125rem .6875rem;
+    margin-top: 1.875rem;
     overflow: hidden;
     cursor: pointer;
     animation: fadein 1.2s .3s ease-out both,transform .3s;
@@ -153,20 +153,20 @@ main {
         font-weight: 600;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 200px;
+        width: 12.5rem;
         overflow: hidden;
     }
     .menu__plats2{
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 240px;
+        width: 15rem;
         overflow: hidden;
     }
     .menu__price{
         float: right;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         font-weight: 600;
-        width: 40px;
+        width: 2.5rem;
         margin-top: -1.2rem;
      }
 }
@@ -176,11 +176,11 @@ main {
     transform: translateX(-140%);
 }
 .menu__starter-card:hover .menu__plats{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__starter-card:hover .menu__plats2{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__starter-card:hover .menu__animation {
@@ -199,39 +199,39 @@ main {
     align-items: center;
     background-color: $Vert;
     color: $Blanc;
-    font-size: 20px;
-    height: 59px;
-    width: 80px;
-    border-radius: 0px 10px 10px 0px;
+    font-size: 1.25rem;
+    height: 3.6875rem;
+    width: 5rem;
+    border-radius: 0rem .625rem .625rem 0rem;
     float: right;
-    margin: -2.9rem 0 0 300px;
+    margin: -2.9rem 0 0 18.75rem;
     transition-duration: .5s;
     transform-origin: right;
     visibility: hidden;
 }
 
 .menu__dish{
-    padding-left: 40px;
-    padding-top: 20px;
+    padding-left: 2.5rem;
+    padding-top: 1.25rem;
     h3{
-        padding-top: 10px;
+        padding-top: .625rem;
         font-weight: 400;
         color: $GreyF;
     }
     .fil{
-        height: 3px;
-        width: 50px;
+        height: .1875rem;
+        width: 3.125rem;
         background-color: $Vert;
     }
 }
 
 .menu__dish-card{
     background: white;
-    box-shadow: 0px 0px 15px 0px $Gris;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px 0px 13px 11px;
-    margin-top: 30px;
+    box-shadow: 0rem 0rem .9375rem 0rem $Gris;
+    border-radius: .625rem;
+    width: 18.75rem;
+    padding: .625rem 0rem .8125rem .6875rem;
+    margin-top: 1.875rem;
     overflow: hidden;
     animation: fadein 1.2s .3s ease-out both,transform .3s;
 }
@@ -253,20 +253,20 @@ main {
         font-weight: 600;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 200px;
+        width: 12.5rem;
         overflow: hidden;
     }
     .menu__plats2{
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 230px;
+        width: 14.375rem;
         overflow: hidden;
     }
     .menu__price{
         float: right;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         font-weight: 600;
-        width: 40px;
+        width: 2.5rem;
         margin-top: -1.2rem;
      }
 }
@@ -276,11 +276,11 @@ main {
     transform: translateX(-140%);
 }
 .menu__dish-card:hover .menu__plats{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__dish-card:hover .menu__plats2{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__dish-card:hover .menu__animation {
@@ -295,27 +295,27 @@ main {
 
 
 .menu__dessert{
-    padding-left: 40px;
-    padding-top: 20px;
+    padding-left: 2.5rem;
+    padding-top: 1.25rem;
     h3{
-        padding-top: 10px;
+        padding-top: .625rem;
         font-weight: 400;
         color: $GreyF;
     }
     .fil{
-        height: 3px;
-        width: 50px;
+        height: .1875rem;
+        width: 3.125rem;
         background-color: $Vert;
     }
 }
 
 .menu__dessert-card{
-    background: white;
-    box-shadow: 0px 0px 15px 0px $Gris;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px 0px 13px 11px;
-    margin-top: 30px;
+    background:$Blanc;
+    box-shadow: 0rem 0rem .9375rem 0rem $Gris;
+    border-radius: .625rem;
+    width: 18.75rem;
+    padding: .625rem 0rem .8125rem .6875rem;
+    margin-top: 1.875rem;
     overflow: hidden;
     animation: fadein 1.2s .3s ease-out both,transform .3s;
 }
@@ -335,20 +335,20 @@ main {
         font-weight: 600;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 200px;
+        width: 12.5rem;
         overflow: hidden;
     }
     .menu__plats2{
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 240px;
+        width: 15rem;
         overflow: hidden;
     }
     .menu__price{
         float: right;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         font-weight: 600;
-        width: 40px;
+        width: 2.5rem;
         margin-top: -1.2rem;
      }
 }
@@ -358,11 +358,11 @@ main {
     transform: translateX(-140%);
 }
 .menu__dessert-card:hover .menu__plats{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__dessert-card:hover .menu__plats2{
-    width: 170px;
+    width: 10.625rem;
     transition: all .5s ease-in;
 }
 .menu__dessert-card:hover .menu__animation {
@@ -378,23 +378,22 @@ main {
 .text-3{
     display: flex;
     justify-content: center;
-    padding: 0 0 40px 0;
+    padding: 0 0 2.5rem 0;
     background-color: $Bg;
-    margin-top: -20px;
     input{
-        font-size: 17px;
-        margin-top: 35px;
-        width: 180px;
-        padding: 15px;
+        font-size: 1.0625rem;
+        margin-top: 2.1875rem;
+        width: 11.25rem;
+        padding: .9375rem;
         font-weight: 600;
-        color: white;
+        color: $Blanc;
         border: transparent;
         background-image:linear-gradient(to top, $Violet, $Rose);
-        border-radius: 30px;
-        box-shadow: 0px 0px 9px 0px $Shadow;
+        border-radius: 1.875rem;
+        box-shadow: 0rem 0rem .5625rem 0rem $Shadow;
             &:hover{
                 opacity: .8;
-                box-shadow: 0px 0px 11px 0px $Shadow;
+                box-shadow: 0rem 0rem .6875rem 0rem $Shadow;
             }
     }
 }
@@ -407,15 +406,15 @@ main {
     justify-content: center;
     align-items: center;
     background:$Shadow;
-    padding: 20px 0 40px 0;
+    padding: 1.25rem 0 2.5rem 0;
     width: auto;
     color: $Blanc;
     .end{
         img{
-            padding-bottom: 10px;
+            padding-bottom: .625rem;
         }
         p{
-            padding-top: 10px;
+            padding-top: .625rem;
         }
         a{
             text-decoration: none;
@@ -434,38 +433,38 @@ main {
         width: auto;
     }
     header {
-        width: 345px;
+        width: 21.5625rem;
         display: block;
         img{
-            padding: 10px 0 0 60px;
-            width: 150px;
+            padding: .625rem 0 0 3.75rem;
+            width: 9.375rem;
         }
         i {
-            padding: 0 0 70px 10px;
+            padding: 0 0 4.375rem .625rem;
                 &:hover{
-                    margin: 15px;
-                    padding: 8px;
+                    margin: .9375rem;
+                    padding: .5rem;
                 }
         }
     }
 
     main img {
-        width: 375px;
+        width: 23.4375rem;
     }
 
     .container__menus{
         flex-direction: column;
-        height: 1100px;
-        width: 355px;
-        border-radius: 60px 60px 0 0;
-        padding: 10px 0 0 20px;
+        height: 68.75rem;
+        width: 22.1875rem;
+        border-radius: 3.75rem 3.75rem 0 0;
+        padding: .625rem 0 0 1.25rem;
         margin-top: -3.5rem;
         .menu__title{
-            font-size: 20px;
-            padding-top: 10px;
+            font-size: 1.25rem;
+            padding-top: .625rem;
             .menu__like{
-                padding-top: 5px;
-                padding-left: 6px;
+                padding-top: .3125rem;
+                padding-left: .375rem;
             }
         }
     }
@@ -473,26 +472,26 @@ main {
     .menu__starter {
         padding-left: 0;
         h3{
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0;
         }
     }
     .menu__starter-card{
-        border-radius: 15px;
-        width: 320px;
-        margin-top: 20px;
-        padding: 13px 10px;
+        border-radius: .9375rem;
+        width: 20rem;
+        margin-top: 1.25rem;
+        padding: .8125rem .625rem;
         .menu__plats{
-            font-size: 16px;
+            font-size: 1rem;
             margin: 0;
-            padding: 5px 0;
-            width: 240px;
+            padding: .3125rem 0;
+            width: 15rem;
         }
         .menu__plats2{
-            font-size: 16px;
+            font-size: 1rem;
         }
         .menu__price{
-            font-size: 16px;
+            font-size: 1rem;
             margin-top: -1rem;
          }
     }
@@ -501,34 +500,34 @@ main {
         transform: translateX(-180%);
     }
     .menu__starter-card .menu__animation{
-        height: 75px;
-        margin: -3.7rem 0 0 330px;
-        border-radius: 0px 15px 15px 0px;
+        height: 4.6875rem;
+        margin: -3.7rem 0 0 20.625rem;
+        border-radius: 0rem .9375rem .9375rem 0rem;
     }
 
     .menu__dish{
         padding-left: 0;
         h3{
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0;
         }
     }
     .menu__dish-card{
-        border-radius: 15px;
-        width: 320px;
-        margin-top: 20px;
-        padding: 13px 10px;
+        border-radius: .9375rem;
+        width: 20rem;
+        margin-top: 1.25rem;
+        padding: .8125rem .625rem;
         .menu__plats{
-            font-size: 16px;
+            font-size: 1rem;
             margin: 0;
-            padding: 5px 0;
-            width: 240px;
+            padding: .3125rem 0;
+            width: 15rem;
         }
         .menu__plats2{
-            font-size: 16px;
+            font-size: 1rem;
         }
         .menu__price{
-            font-size: 16px;
+            font-size: 1rem;
             margin-top: -1rem;
          }
     }
@@ -536,36 +535,36 @@ main {
         transform: translateX(-180%);
     }
     .menu__dish-card .menu__animation{
-        height: 75px;
-        margin: -3.7rem 0 0 330px;
-        border-radius: 0px 15px 15px 0px;
+        height: 4.6875rem;
+        margin: -3.7rem 0 0 20.625rem;
+        border-radius: 0rem .9375rem .9375rem 0rem;
     }
 
 
     .menu__dessert{
         padding-left: 0;
         h3{
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0;
         }
     }
 
     .menu__dessert-card{
-        border-radius: 15px;
-        width: 320px;
-        margin-top: 20px;
-        padding: 13px 10px;
+        border-radius: .9375rem;
+        width: 20rem;
+        margin-top: 1.25rem;
+        padding: .8125rem .625rem;
         .menu__plats{
-            font-size: 16px;
+            font-size: 1rem;
             margin: 0;
-            padding: 5px 0;
-            width: 240px;
+            padding: .3125rem 0;
+            width: 15rem;
         }
         .menu__plats2{
-            font-size: 16px;
+            font-size: 1rem;
         }
         .menu__price{
-            font-size: 16px;
+            font-size: 1rem;
             margin-top: -1rem;
          }
     }
@@ -574,28 +573,28 @@ main {
         transform: translateX(-180%);
     }
     .menu__dessert-card .menu__animation{
-        height: 75px;
-        margin: -3.7rem 0 0 330px;
-        border-radius: 0px 15px 15px 0px;
+        height: 4.6875rem;
+        margin: -3.7rem 0 0 20.625rem;
+        border-radius: 0rem .9375rem .9375rem 0rem;
     }
 
-    .text-3{
-        padding: 100px 0 30px;
+    .text-3 {
+        padding: 6.25rem 0 1.875rem;
     }
 
-    .page-end{
-        width: 375px;
+    .page-end {
+        width: 23.4375rem;
         margin: 0;
         display: block;
-        .end{
-            font-size: 15px;
-            padding-left: 20px;
-            img{
-                width: 130px;
-                padding: 20px 0 10px 0;
+        .end {
+            font-size: .9375rem;
+            padding-left: 1.25rem;
+            img { 
+                width: 8.125rem;
+                padding: 1.25rem 0 .625rem 0;
             }
-            i{
-                padding-right: 6px;
+            i {
+             padding-right: .375rem;
             }
         }
     }
@@ -611,165 +610,165 @@ main {
         width: auto;
     }
     header{
-        width: 738px;
+        width: 46.125rem;
         position: fixed;
     }
     main img{
-        width: 770px;
+        width: 48.125rem;
     }
     .container__menus{
         flex-direction: column;
         width: auto;
-        height: 1400px;
-        padding: 0 0 0 20px;
+        height: 87.5rem;
+        padding: 0 0 0 1.25rem;
         margin: 0;
         .menu__title{
-            font-size: 25px;
-            padding: 20px 35px;
+            font-size: 1.5625rem;
+            padding: 1.25rem 2.1875rem;
         }
     }
 
     .menu__like .fa-heart{
-        padding-left: 50px;
-        padding-top: 7px;
-        font-size: 30px;
+        padding-left: 3.125rem;
+        padding-top: .4375rem;
+        font-size: 1.875rem;
     }
     .menu__starter{
-        padding-top: 10px;
+        padding-top: .625rem;
         h3{
-            font-size: 25px;
+            font-size: 1.5625rem;
         }
     }
 
     .menu__starter-card {
-        width: 600px;
+        width: 37.5rem;
         .menu__plats {
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__plats2 {
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__price {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         .menu__animation {
-            width: 100px;
-            height: 100px;
-            margin: -4.9rem 0 0 605px;
+            width: 6.25rem;
+            height: 6.25rem;
+            margin: -4.9rem 0 0 37.8125rem;
         }
     }
     .menu__starter-card:hover .menu__plats{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__starter-card:hover .menu__plats2{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__starter-card:hover .menu__price{
         transform: translateX(-200%);
     }
     .menu__starter-card:hover .menu__animation .menu__animation--circle {
-        font-size: 27px;
+        font-size: 1.6875rem;
     }
 
     .menu__dish {
-        padding-top: 10px;
+        padding-top: .625rem;
         h3{
-            font-size: 25px;
+            font-size: 1.5625rem;
         }
     }
 
     .menu__dish-card {
-        width: 600px;
+        width: 37.5rem;
         .menu__plats{
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__plats2{
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__price{
-            font-size: 20px;
+            font-size: 1.25rem;
          }
          .menu__animation{
-            width: 100px;
-            height: 100px;
-            margin: -4.9rem 0 0 605px;
+            width: 6.25rem;
+            height: 6.25rem;
+            margin: -4.9rem 0 0 37.8125rem;
         }
     }
     .menu__dish-card:hover .menu__plats{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__dish-card:hover .menu__plats2{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__dish-card:hover .menu__price{
         transform: translateX(-200%);
     }
     .menu__dish-card:hover .menu__animation .menu__animation--circle {
-        font-size: 27px;
+        font-size: 1.6875rem;
     }
 
     .menu__dessert{
-        padding-top: 10px;
+        padding-top: .625rem;
         h3{
-            font-size: 25px;
+            font-size: 1.5625rem;
         }
     }
     .menu__dessert-card{
-        width: 600px;
+        width: 37.5rem;
         .menu__plats{
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__plats2{
-            font-size: 25px;
-            width: 500px;
+            font-size: 1.5625rem;
+            width: 31.25rem;
         }
         .menu__price{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         .menu__animation{
-            width: 100px;
-            height: 100px;
-            margin: -4.9rem 0 0 605px;
+            width: 6.25rem;
+            height: 6.25rem;
+            margin: -4.9rem 0 0 37.8125rem;
         }
     }
     .menu__dessert-card:hover .menu__plats{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__dessert-card:hover .menu__plats2{
-        width: 500px;
+        width: 31.25rem;
     }
     .menu__dessert-card:hover .menu__price{
         transform: translateX(-200%);
     }
     .menu__dessert-card:hover .menu__animation .menu__animation--circle {
-        font-size: 27px;
+        font-size: 1.6875rem;
     }
 
     .text-3{
-        padding: 70px 0;
+        padding: 4.375rem 0;
         input{
-            font-size: 30px;
-            width: 230px;
+            font-size: 1.875rem;
+            width: 14.375rem;
         }
     }
 
     .page-end{
-        width: 768px;
+        width: 48rem;
         display: flex;
         .end{
-            font-size: 25px;
-            padding-left: 20px;
+            font-size: 1.5625rem;
+            padding-left: 1.25rem;
             img{
-                width: 200px;
-                padding: 17px 0 10px 0;
+                width: 12.5rem;
+                padding: 1.0625rem 0 .625rem 0;
             }
             i{
-                padding-right: 6px;
+                padding-right: .375rem;
             }
         }
     }
